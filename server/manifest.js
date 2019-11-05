@@ -37,7 +37,18 @@ module.exports = new Confidence.Store({
     plugins: [
       {
         plugin: "../lib", // Main plugin
-        options: {}
+        options: {
+          jwtKey: {
+            $filter: { $env: "NODE_ENV" },
+            $default: {
+              $env: "JWT_SECRET",
+              $default: "jwt-secret"
+            },
+            production: {
+              $env: "JWT_SECRET"
+            }
+          }
+        }
       },
       {
         plugin: "./plugins/swagger"
