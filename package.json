@@ -12,6 +12,7 @@
     "@hapi/joi": "15.x.x",
     "haute-couture": "3.x.x",
     "objection": "1.x.x",
+    "pg": "^7.12.1",
     "schwifty": "4.x.x"
   },
   "peerDependencies": {
