@@ -38,8 +38,9 @@ Asumming that you're already inside `root` directory :
 ```
 Server started at http://localhost:3000
 ```
-4. To open API Explorer, goto `http://localhost:3000/documentation`
-5. To use the API, use this URL `http://localhost:3000/[ROUTE]`
+4. If you found an error, try to use `sudo npm start` (for windows, run Git Bash / CMD / CMDER as Administrator, then try `npm start`)
+5. To open API Explorer, goto `http://localhost:3000/documentation`
+6. To use the API, use this URL `http://localhost:3000/[ROUTE]`
 
 ## First Things First
 You have to create 1 user account first. I'm sorry i can't provide the seeder yet. Because of tight deadline.
